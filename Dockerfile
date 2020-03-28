@@ -13,6 +13,7 @@ RUN npm install npm@6.13.1 -g
 RUN npm install dat@13.13.1 -g
 
 COPY startup.sh /opt/startup.sh
+RUN chmod a+x /opt/startup.sh
 
 # Bind mount location
 VOLUME [ "/opt/dat" ]
